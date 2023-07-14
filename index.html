@@ -100,10 +100,12 @@
         margin-top:0 ;
       }
 
-      @media screen and (max-width:768px){
+      @media screen and (max-width:880px){
           .container{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            margin-left:7rem ;
+            padding: 1rem;
           }
           .profile{
              width: 266.656px;
@@ -115,20 +117,42 @@
       }
 
       @media screen and (max-width:576px){
+        .welcome-text h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 100px;
+        }
+        .imgs{
+        max-height: 201px;
+        max-width: 134px;
+      }
+      .role{
+        top: -155px;
+        right: -53.6px;
+      }
+
           .container{
             display: grid;
             grid-template-columns:1fr 1fr;
             place-items: center;
+            padding: 1vw 3vw;
+            margin-left:1vw;
           }
           .profile{
-             width: 266.656px;
-             height: 366.594px;
+             width: 178.656px;
+             height: 245.594px;
           }
           .img5{
             top: 0;
           }
           .img2,.img4,.img6{
             top: 100px;
+            left: 0.5rem;
+            
+          }
+          .img1,.img3,.img5{
+           
+            right: -1.5rem;
           }
       }
     </style>
